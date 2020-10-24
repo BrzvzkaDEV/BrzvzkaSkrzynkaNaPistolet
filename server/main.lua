@@ -1,0 +1,6 @@
+ESX.RegisterUsableItem('skrzynka_pistolet', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+    xPlayer.removeInventoryItem('skrzynka', 1)
+xPlayer.addWeapon('WEAPON_PISTOL', 40)
+TriggerClientEvent("esx:showNotification", source, "Wyjmujesz ze skrzyniu Pistolet")
+end)
